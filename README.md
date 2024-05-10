@@ -19,3 +19,13 @@
 - **Model Training**: A Logistic Regression model is trained using TfidfVectorizer for text data transformation. The model achieves an accuracy of 85.64% on training data and 74.48% on test data.
 
 - **Model Utilization**: The trained model is saved and loaded for making predictions. An example is shown where a new tweet is classified as a positive sentiment.
+
+**03. Hotel Recommendation System**
+
+- **Library Imports**: The notebook begins by importing necessary libraries such as nltk, numpy, pandas, and specific modules for text processing like stopwords, word_tokenize, and WordNetLemmatizer.
+
+- **Data Preparation**: It involves loading a dataset of hotel reviews, modifying the column to replace abbreviations of Countries, and extracting the country names from Text into a new ‘countries’ column. Unnecessary columns are dropped to streamline the data.
+
+- **Data Processing**: Columns that contain string representations of lists, are converted into actual lists using the literal_eval function. The entries are then transformed to lowercase for uniformity.
+
+- **Hotel Recommendation Function**: A function recommend_hotel is defined to recommend hotels based on a given location and description. It processes the description to remove stopwords and lemmatize the words, then compares these with the hotel tags to find similarities and ranks the hotels accordingly.
