@@ -29,3 +29,13 @@
 - **Data Processing**: Columns that contain string representations of lists, are converted into actual lists using the literal_eval function. The entries are then transformed to lowercase for uniformity.
 
 - **Hotel Recommendation Function**: A function recommend_hotel is defined to recommend hotels based on a given location and description. It processes the description to remove stopwords and lemmatize the words, then compares these with the hotel tags to find similarities and ranks the hotels accordingly.
+
+**04. Spam Email Detection using NLP**
+
+- **Data Preparation**: The project begins by importing necessary libraries, loading the dataset from a CSV file, and performing initial data exploration. It involves checking for duplicates and missing data, resulting in a cleaned dataset of 5695 email entries.
+
+- **Text Processing**: The next step involves downloading stopwords from NLTK and creating a function to remove stopwords and punctuation from the text. This function is applied to the ‘text’ column to clean the data.
+
+- **Feature Extraction**: The cleaned text is then converted into a matrix of token counts using CountVectorizer, which results in a feature set with 37229 tokens.
+
+- **Model Training and Evaluation**: A Naive Bayes Classifier is trained on the feature set and evaluated using metrics like precision, recall, and f1-score. The model shows high accuracy on both training (99.71%) and testing data (99.21%).
