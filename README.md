@@ -39,3 +39,13 @@
 - **Feature Extraction**: The cleaned text is then converted into a matrix of token counts using CountVectorizer, which results in a feature set with 37229 tokens.
 
 - **Model Training and Evaluation**: A Naive Bayes Classifier is trained on the feature set and evaluated using metrics like precision, recall, and f1-score. The model shows high accuracy on both training (99.71%) and testing data (99.21%).
+
+**05. Youtube Trending Video Analysis**
+
+- **Libraries and Setup**: The notebook imports essential libraries like pandas, numpy, matplotlib, seaborn, and wordcloud. It also sets up plotting configurations for visualizations.
+
+- **Data Exploration**: The dataset is loaded and initial exploration is performed, including handling missing values and setting display formats.
+
+- **Data Visualization**: Various visualizations are created, such as pie charts, histograms, scatter plots, and a word cloud, to analyze trends in video titles, views, and other metrics.
+
+- **Correlation Analysis**: A heatmap is generated to show correlations between numerical and boolean features in the dataset.
